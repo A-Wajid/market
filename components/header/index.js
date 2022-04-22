@@ -30,7 +30,7 @@ const Header = () => {
                             <div className="w-[433px] h-[46px] rounded-xl border border-solid border-gray-700 bg-gray-700 flex items-center">
                                 {/* img_div */}
                                 <div className="px-[10px]">
-                                    <img src="/images/vector.png" />
+                                    <img src="/images/Vector.png" />
                                 </div>
                                 <input placeholder="Search for a commodity" className="w-full  bg-transparent focus:outline-none placeholder:text-white  " />
                             </div>
