@@ -10,56 +10,56 @@ const Banner = () => {
         {
             id: 1,
             heading: "Technology",
-            image: "/images/computer.png",
+            img: "/images/computer.png",
             text: "View more"
         },
         {
             id: 2,
             heading: "Crypto",
-            image: "/images/crypto.png",
+            img: "/images/crypto.png",
             text: "View more"
         },
         {
             id: 3,
             heading: "Industrials",
-            image: "/images/industrials.png",
+            img: "/images/industrials.png",
             text: "View more"
         },
         {
             id: 4,
             heading: "Healthcare",
-            image: "/images/health.png",
+            img: "/images/health.png",
             text: "View more"
         }]
     // map_loop_for_slider
     let slider = [
         {
             id: 1,
-            image: "/images/gme.png",
+            img: "/images/gme.png",
             heading: "GameStop",
             text: "NYSE: GME"
         },
         {
             id: 2,
-            image: "/images/tsl.png",
+            img: "/images/tsl.png",
             heading: "TSL",
             text: "NYSE: GME"
         },
         {
             id: 3,
-            image: "/images/bt.png",
+            img: "/images/bt.png",
             heading: "BIT",
             text: "NYSE: GME"
         },
         {
             id: 4,
-            image: "/images/man.png",
+            img: "/images/man.png",
             heading: "ETH",
             text: "NYSE: GME"
         },
         {
             id: 5,
-            image: "/images/man.png",
+            img: "/images/man.png",
             heading: "ETH",
             text: "NYSE: GME"
         },
@@ -104,9 +104,9 @@ const Banner = () => {
                                             <div className="flex justify-between px-8 ">
                                                 {/* left_side_div */}
                                                 <div className="flex items-center">
-                                                    {/* image_div */}
+                                                    {/* img_div */}
                                                     <div>
-                                                        <image src={single.image} />
+                                                        <img src={single.img} />
                                                     </div>
                                                     {/* text_div */}
                                                     <div className="pl-2">
@@ -117,10 +117,10 @@ const Banner = () => {
                                                 {/* right_side_div */}
                                                 <div>
                                                     <div className="follow w-full rounded-2xl">
-                                                        {/* image_text */}
+                                                        {/* img_text */}
                                                         <div className="flex items-center py-2 px-[18px]">
                                                             <div>
-                                                                <image src="/images/add.png" alt="" className="pr-1" />
+                                                                <img src="/images/add.png" alt="" className="pr-1" />
                                                             </div>
                                                             <p className="text-sm font-semibold text-white">Follow</p>
                                                         </div>
@@ -134,9 +134,9 @@ const Banner = () => {
                                                     <p className='text-xl font-semibold text-white'>$234.84</p>
                                                     <p className='text-sm font-normal text-white pt-[9px]'>Stock price today</p>
                                                 </div>
-                                                {/* image_div */}
+                                                {/* img_div */}
                                                 <div>
-                                                    <image src='/images/path.png' />
+                                                    <img src='/images/path.png' />
                                                 </div>
                                             </div>
                                             {/* last_section */}
@@ -149,14 +149,14 @@ const Banner = () => {
                                                 {/* middle */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <image src='/images/users.png' alt='' />
+                                                        <img src='/images/users.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>12M Followers</p>
                                                 </div>
                                                 {/* last */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <image src='/images/eye.png' alt='' />
+                                                        <img src='/images/eye.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>2M Views</p>
                                                 </div>
@@ -187,12 +187,12 @@ const Banner = () => {
                                     <div>
                                         <p className="text-white text-lg font-semibold text-center pt-[26px] pb-4">{single.heading}</p>
                                     </div>
-                                    {/* image_div */}
+                                    {/* img_div */}
                                     <div className="w-full flex justify-center">
                                         <div className=" border border-solid border-[#4B5563] w-[76px] h-[76px] rounded-[50px]">
-                                            {/* image */}
+                                            {/* img */}
                                             <div className="flex items-center h-full w-full justify-center">
-                                                <image src={single.image} alt="" />
+                                                <img src={single.img} alt="" />
                                             </div>
                                         </div>
                                     </div>

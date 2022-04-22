@@ -1,3 +1,4 @@
+
 const Header = () => {
     return (
         <div className="container">
@@ -10,13 +11,13 @@ const Header = () => {
                         <div className="flex items-center ">
                             {/* hamburger_div */}
                             <div className="px-6 ">
-                                <image src="/images/hamburger.png" alt=""/>
+                                <img src="/images/hamburger.png" alt=""/>
                             </div>
                             {/* logo_text_div */}
                             <div className="flex items-center">
                                 {/* logo */}
                                 <div className="pr-[10px]">
-                                    <image src="/images/rounded.png" alt="" />
+                                    <img src="/images/rounded.png" alt="" />
                                 </div>
                                 {/* text */}
                                 <div>
@@ -27,9 +28,9 @@ const Header = () => {
                         {/* middle_input_div */}
                         <div>
                             <div className="w-[433px] h-[46px] rounded-xl border border-solid border-gray-700 bg-gray-700 flex items-center">
-                                {/* image_div */}
+                                {/* img_div */}
                                 <div className="px-[10px]">
-                                    <image src="/images/vector.png" />
+                                    <img src="/images/vector.png" />
                                 </div>
                                 <input placeholder="Search for a commodity" className="w-full  bg-transparent focus:outline-none placeholder:text-white  " />
                             </div>
@@ -38,15 +39,15 @@ const Header = () => {
                         <div className="flex items-center">
                             {/* mail_div */}
                             <div className="pr-4">
-                                <image src="/images/mail.png" />
+                                <img src="/images/mail.png" />
                             </div>
                             {/* bell_div */}
                             <div className="pr-6">
-                                <image src="/images/bell.png" />
+                                <img src="/images/bell.png" />
                             </div>
                             {/* man_div */}
                             <div className="pr-7">
-                                <image src="/images/man.png" />
+                                <img src="/images/man.png" />
                             </div>
                         </div>
                     </div>
