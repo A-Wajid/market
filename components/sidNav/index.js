@@ -2,7 +2,7 @@ const SideNav = () => {
     return (
         <div>
             {/* sid_nav_main_bg */}
-            <div className="bg-gray-800 w-[306px] min-h-screen rounded-tr-xl rounded-b-xl">
+            <div className="bg-gray-800 w-[306px] h-[960px] rounded-tr-xl rounded-b-xl">
                 {/* sid_nav_main_div */}
                 <div>
                     {/* up_side_div */}
@@ -131,7 +131,7 @@ const SideNav = () => {
                                 {/* doge_div */}
                                 <div>
                                     {/* img_txt */}
-                                    <div className="flex items-center pt-[19px]">
+                                    <div className="flex items-center pt-[19px] pb-24">
                                         <img src="/images/doge.png" alt="" />
                                         <p className="text-sm font-normal text-white pl-2">DOGE</p>
                                         <p className="text-sm font-normal text-green-400 pl-[55px]">+2.54%</p>
