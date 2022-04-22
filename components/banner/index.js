@@ -96,74 +96,76 @@ const Banner = () => {
                     >
                         {/* card_1 */}
                         {/* cards_div */}
-                        {slider?.map((single) => (
-                            <SwiperSlide >
-                                <div className="un_active_cards  mt-8 rounded-xl bg-color">
-                                    <div className="py-[30px]">
-                                        {/* card_header_div */}
-                                        <div className="flex justify-between px-8 ">
-                                            {/* left_side_div */}
-                                            <div className="flex items-center">
-                                                {/* image_div */}
+                        {slider?.map((single, index) => (
+                            <div key={index}>
+                                <SwiperSlide >
+                                    <div className="un_active_cards  mt-8 rounded-xl bg-color">
+                                        <div className="py-[30px]">
+                                            {/* card_header_div */}
+                                            <div className="flex justify-between px-8 ">
+                                                {/* left_side_div */}
+                                                <div className="flex items-center">
+                                                    {/* image_div */}
+                                                    <div>
+                                                        <img src={single.image} />
+                                                    </div>
+                                                    {/* text_div */}
+                                                    <div className="pl-2">
+                                                        <p className="text-xl font-semibold text-white">{single.heading}</p>
+                                                        <p className="text-xs font-normal text-white pt-2">{single.text}</p>
+                                                    </div>
+                                                </div>
+                                                {/* right_side_div */}
                                                 <div>
-                                                    <img src={single.image} />
-                                                </div>
-                                                {/* text_div */}
-                                                <div className="pl-2">
-                                                    <p className="text-xl font-semibold text-white">{single.heading}</p>
-                                                    <p className="text-xs font-normal text-white pt-2">{single.text}</p>
-                                                </div>
-                                            </div>
-                                            {/* right_side_div */}
-                                            <div>
-                                                <div className="follow w-full rounded-2xl">
-                                                    {/* image_text */}
-                                                    <div className="flex items-center py-2 px-[18px]">
-                                                        <div>
-                                                            <img src="/images/add.png" alt="" className="pr-1" />
+                                                    <div className="follow w-full rounded-2xl">
+                                                        {/* image_text */}
+                                                        <div className="flex items-center py-2 px-[18px]">
+                                                            <div>
+                                                                <img src="/images/add.png" alt="" className="pr-1" />
+                                                            </div>
+                                                            <p className="text-sm font-semibold text-white">Follow</p>
                                                         </div>
-                                                        <p className="text-sm font-semibold text-white">Follow</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        {/* middle_section */}
-                                        <div className='flex justify-between px-8 pt-[32px]' >
-                                            {/* text_div */}
-                                            <div>
-                                                <p className='text-xl font-semibold text-white'>$234.84</p>
-                                                <p className='text-sm font-normal text-white pt-[9px]'>Stock price today</p>
-                                            </div>
-                                            {/* image_div */}
-                                            <div>
-                                                <img src='/images/path.png' />
-                                            </div>
-                                        </div>
-                                        {/* last_section */}
-                                        <div className='flex justify-between px-8 pt-8'>
-                                            {/* left */}
-                                            <div className='flex'>
-                                                <p className='text-xs font-semibold text-white'>+9.85%</p>
-                                                <p className='text-xs font-normal text-white pl-2'>Increase in stock today</p>
-                                            </div>
-                                            {/* middle */}
-                                            <div className='flex'>
+                                            {/* middle_section */}
+                                            <div className='flex justify-between px-8 pt-[32px]' >
+                                                {/* text_div */}
                                                 <div>
-                                                    <img src='/images/users.png' alt='' />
+                                                    <p className='text-xl font-semibold text-white'>$234.84</p>
+                                                    <p className='text-sm font-normal text-white pt-[9px]'>Stock price today</p>
                                                 </div>
-                                                <p className='text-xs font-normal text-white pl-2'>12M Followers</p>
-                                            </div>
-                                            {/* last */}
-                                            <div className='flex'>
+                                                {/* image_div */}
                                                 <div>
-                                                    <img src='/images/eye.png' alt='' />
+                                                    <img src='/images/path.png' />
                                                 </div>
-                                                <p className='text-xs font-normal text-white pl-2'>2M Views</p>
+                                            </div>
+                                            {/* last_section */}
+                                            <div className='flex justify-between px-8 pt-8'>
+                                                {/* left */}
+                                                <div className='flex'>
+                                                    <p className='text-xs font-semibold text-white'>+9.85%</p>
+                                                    <p className='text-xs font-normal text-white pl-2'>Increase in stock today</p>
+                                                </div>
+                                                {/* middle */}
+                                                <div className='flex'>
+                                                    <div>
+                                                        <img src='/images/users.png' alt='' />
+                                                    </div>
+                                                    <p className='text-xs font-normal text-white pl-2'>12M Followers</p>
+                                                </div>
+                                                {/* last */}
+                                                <div className='flex'>
+                                                    <div>
+                                                        <img src='/images/eye.png' alt='' />
+                                                    </div>
+                                                    <p className='text-xs font-normal text-white pl-2'>2M Views</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
+                            </div>
                         ))}
                     </Swiper>
                 </div>
@@ -180,24 +182,26 @@ const Banner = () => {
                     {/* cards_div */}
                     <div className="flex justify-center">
                         {/* card_1 */}
-                        {cards?.map((single) => (
-                            <div className="bg-gray-800 w-[203px] h-[196px] rounded-xl mr-5">
-                                {/* heading_div */}
-                                <div>
-                                    <p className="text-white text-lg font-semibold text-center pt-[26px] pb-4">{single.heading}</p>
-                                </div>
-                                {/* image_div */}
-                                <div className="w-full flex justify-center">
-                                    <div className=" border border-solid border-[#4B5563] w-[76px] h-[76px] rounded-[50px]">
-                                        {/* image */}
-                                        <div className="flex items-center h-full w-full justify-center">
-                                            <img src={single.image} alt="" />
+                        {cards?.map((single, index) => (
+                            <div key={index}>
+                                <div className="bg-gray-800 w-[203px] h-[196px] rounded-xl mr-5">
+                                    {/* heading_div */}
+                                    <div>
+                                        <p className="text-white text-lg font-semibold text-center pt-[26px] pb-4">{single.heading}</p>
+                                    </div>
+                                    {/* image_div */}
+                                    <div className="w-full flex justify-center">
+                                        <div className=" border border-solid border-[#4B5563] w-[76px] h-[76px] rounded-[50px]">
+                                            {/* image */}
+                                            <div className="flex items-center h-full w-full justify-center">
+                                                <img src={single.image} alt="" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                {/* text_div */}
-                                <div className="pt-4 pb-8">
-                                    <p className="text-xs font-normal text-white text-center">{single.text}</p>
+                                    {/* text_div */}
+                                    <div className="pt-4 pb-8">
+                                        <p className="text-xs font-normal text-white text-center">{single.text}</p>
+                                    </div>
                                 </div>
                             </div>
                         ))}

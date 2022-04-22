@@ -1,5 +1,4 @@
 const Header = () => {
-
     return (
         <div className="container">
             {/* header_bg_color*/}
