@@ -4,7 +4,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper";
-import Image from 'next/image';
 const Banner = () => {
     // map_loop_for_cards
     let cards = [
@@ -107,7 +106,7 @@ const Banner = () => {
                                                 <div className="flex items-center">
                                                     {/* image_div */}
                                                     <div>
-                                                        <Image src={single.image} />
+                                                        <image src={single.image} />
                                                     </div>
                                                     {/* text_div */}
                                                     <div className="pl-2">
@@ -121,7 +120,7 @@ const Banner = () => {
                                                         {/* image_text */}
                                                         <div className="flex items-center py-2 px-[18px]">
                                                             <div>
-                                                                <Image src="/images/add.png" alt="" className="pr-1" />
+                                                                <image src="/images/add.png" alt="" className="pr-1" />
                                                             </div>
                                                             <p className="text-sm font-semibold text-white">Follow</p>
                                                         </div>
@@ -137,7 +136,7 @@ const Banner = () => {
                                                 </div>
                                                 {/* image_div */}
                                                 <div>
-                                                    <Image src='/images/path.png' />
+                                                    <image src='/images/path.png' />
                                                 </div>
                                             </div>
                                             {/* last_section */}
@@ -150,14 +149,14 @@ const Banner = () => {
                                                 {/* middle */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <Image src='/images/users.png' alt='' />
+                                                        <image src='/images/users.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>12M Followers</p>
                                                 </div>
                                                 {/* last */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <Image src='/images/eye.png' alt='' />
+                                                        <image src='/images/eye.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>2M Views</p>
                                                 </div>
@@ -193,7 +192,7 @@ const Banner = () => {
                                         <div className=" border border-solid border-[#4B5563] w-[76px] h-[76px] rounded-[50px]">
                                             {/* image */}
                                             <div className="flex items-center h-full w-full justify-center">
-                                                <Image src={single.image} alt="" />
+                                                <image src={single.image} alt="" />
                                             </div>
                                         </div>
                                     </div>
