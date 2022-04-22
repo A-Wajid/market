@@ -67,7 +67,7 @@ const Banner = () => {
     return (
         <div>
             {/* banner_main_div */}
-            <div className="w-[1543px] pt-[48px] pb-[66px] pl-[55px] pr-[57px]">
+            <div className="w-[1543px] pt-[48px] pb-[66px] pl-[55px] pr-[57px] ">
                 {/* top_section */}
                 <div>
                     {/* heading_div */}

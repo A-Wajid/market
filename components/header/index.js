@@ -1,4 +1,5 @@
 const Header = () => {
+
     return (
         <div className="container">
             {/* header_bg_color*/}
@@ -9,8 +10,8 @@ const Header = () => {
                         {/* left_side_div */}
                         <div className="flex items-center ">
                             {/* hamburger_div */}
-                            <div className="px-6">
-                                <img src="/images/hamburger.png" alt="" />
+                            <div className="px-6 ">
+                                <img src="/images/hamburger.png" alt=""/>
                             </div>
                             {/* logo_text_div */}
                             <div className="flex items-center">
