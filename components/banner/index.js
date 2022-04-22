@@ -136,7 +136,7 @@ const Banner = () => {
                                                 </div>
                                                 {/* img_div */}
                                                 <div>
-                                                    <img src="/images/path.png" alt="" />
+                                                    <img src='/images/Path.png' alt='' />
                                                 </div>
                                             </div>
                                             {/* last_section */}
