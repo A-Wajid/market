@@ -84,7 +84,7 @@ padding: 1px 8px 0px 0px;
   perspective: 600px!important;
 }
 .swiper-slide.swiper-slide-visible.swiper-slide-active {
-  transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1.2) !important;
 }
 
 .swiper-wrapper {
