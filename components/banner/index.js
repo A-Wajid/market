@@ -98,7 +98,7 @@ const Banner = () => {
                         {/* card_1 */}
                         {/* cards_div */}
                         {slider?.map((single, index) => (
-                                <SwiperSlide key={index} >
+                                <SwiperSlide key={single.id} >
                                     <div className="un_active_cards  mt-8 rounded-xl bg-color">
                                         <div className="py-[30px]">
                                             {/* card_header_div */}
