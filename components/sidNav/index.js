@@ -2,7 +2,7 @@ const SideNav = () => {
     return (
         <div>
             {/* sid_nav_main_bg */}
-            <div className="bg-gray-800 w-[306px] h-[960px] rounded-tr-xl rounded-b-xl">
+            <div className="bg-gray-800 w-[306px] min-h-screen rounded-tr-xl rounded-b-xl">
                 {/* sid_nav_main_div */}
                 <div>
                     {/* up_side_div */}
