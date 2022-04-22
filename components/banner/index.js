@@ -4,6 +4,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper";
+import Image from 'next/image';
 const Banner = () => {
     // map_loop_for_cards
     let cards = [
@@ -97,8 +98,7 @@ const Banner = () => {
                         {/* card_1 */}
                         {/* cards_div */}
                         {slider?.map((single, index) => (
-                            <div key={index}>
-                                <SwiperSlide >
+                                <SwiperSlide key={index} >
                                     <div className="un_active_cards  mt-8 rounded-xl bg-color">
                                         <div className="py-[30px]">
                                             {/* card_header_div */}
@@ -107,7 +107,7 @@ const Banner = () => {
                                                 <div className="flex items-center">
                                                     {/* image_div */}
                                                     <div>
-                                                        <img src={single.image} />
+                                                        <Image src={single.image} />
                                                     </div>
                                                     {/* text_div */}
                                                     <div className="pl-2">
@@ -121,7 +121,7 @@ const Banner = () => {
                                                         {/* image_text */}
                                                         <div className="flex items-center py-2 px-[18px]">
                                                             <div>
-                                                                <img src="/images/add.png" alt="" className="pr-1" />
+                                                                <Image src="/images/add.png" alt="" className="pr-1" />
                                                             </div>
                                                             <p className="text-sm font-semibold text-white">Follow</p>
                                                         </div>
@@ -137,7 +137,7 @@ const Banner = () => {
                                                 </div>
                                                 {/* image_div */}
                                                 <div>
-                                                    <img src='/images/path.png' />
+                                                    <Image src='/images/path.png' />
                                                 </div>
                                             </div>
                                             {/* last_section */}
@@ -150,14 +150,14 @@ const Banner = () => {
                                                 {/* middle */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <img src='/images/users.png' alt='' />
+                                                        <Image src='/images/users.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>12M Followers</p>
                                                 </div>
                                                 {/* last */}
                                                 <div className='flex'>
                                                     <div>
-                                                        <img src='/images/eye.png' alt='' />
+                                                        <Image src='/images/eye.png' alt='' />
                                                     </div>
                                                     <p className='text-xs font-normal text-white pl-2'>2M Views</p>
                                                 </div>
@@ -165,7 +165,6 @@ const Banner = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                            </div>
                         ))}
                     </Swiper>
                 </div>
@@ -194,7 +193,7 @@ const Banner = () => {
                                         <div className=" border border-solid border-[#4B5563] w-[76px] h-[76px] rounded-[50px]">
                                             {/* image */}
                                             <div className="flex items-center h-full w-full justify-center">
-                                                <img src={single.image} alt="" />
+                                                <Image src={single.image} alt="" />
                                             </div>
                                         </div>
                                     </div>

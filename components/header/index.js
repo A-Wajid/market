@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const Header = () => {
     return (
         <div className="container">
@@ -10,13 +11,13 @@ const Header = () => {
                         <div className="flex items-center ">
                             {/* hamburger_div */}
                             <div className="px-6 ">
-                                <img src="/images/hamburger.png" alt=""/>
+                                <Image src="/images/hamburger.png" alt=""/>
                             </div>
                             {/* logo_text_div */}
                             <div className="flex items-center">
                                 {/* logo */}
                                 <div className="pr-[10px]">
-                                    <img src="/images/rounded.png" alt="" />
+                                    <Image src="/images/rounded.png" alt="" />
                                 </div>
                                 {/* text */}
                                 <div>
@@ -29,7 +30,7 @@ const Header = () => {
                             <div className="w-[433px] h-[46px] rounded-xl border border-solid border-gray-700 bg-gray-700 flex items-center">
                                 {/* image_div */}
                                 <div className="px-[10px]">
-                                    <img src="/images/vector.png" />
+                                    <Image src="/images/vector.png" />
                                 </div>
                                 <input placeholder="Search for a commodity" className="w-full  bg-transparent focus:outline-none placeholder:text-white  " />
                             </div>
@@ -38,15 +39,15 @@ const Header = () => {
                         <div className="flex items-center">
                             {/* mail_div */}
                             <div className="pr-4">
-                                <img src="/images/mail.png" />
+                                <Image src="/images/mail.png" />
                             </div>
                             {/* bell_div */}
                             <div className="pr-6">
-                                <img src="/images/bell.png" />
+                                <Image src="/images/bell.png" />
                             </div>
                             {/* man_div */}
                             <div className="pr-7">
-                                <img src="/images/man.png" />
+                                <Image src="/images/man.png" />
                             </div>
                         </div>
                     </div>
